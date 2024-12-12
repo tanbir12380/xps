@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        long g = 0;
+        for (int i = 1; i <= n; i++) {
+            long x;
+            cin >> x;
+            long d;
+            if (i > x) {
+                d = i - x;
+            } else {
+                d = x - i;
+            }
+            while (d != 0) {
+                long temp = g % d;
+                g = d;
+                d = temp;
+            }
+        }
+        cout << g << endl;
+    }
+    return 0;
+}
