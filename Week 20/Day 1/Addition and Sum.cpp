@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 const int maxN = 1e5 + 9;
 long long a[maxN], t[maxN * 4], lazy[maxN * 4];
 
