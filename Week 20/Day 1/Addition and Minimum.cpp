@@ -3,7 +3,6 @@ using namespace std;
 
 const int maxN = 1e5 + 9, inf = 1e18;
 long long a[maxN], t[maxN * 4], lazy[maxN * 4];
-
 void push(int n, int b, int e) {
    if (lazy[n] == 0) {
       return;
